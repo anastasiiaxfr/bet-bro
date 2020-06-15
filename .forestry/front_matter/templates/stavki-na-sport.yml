@@ -40,12 +40,3 @@ fields:
   type: tag_list
   default: []
   label: categories
-pages:
-- content/english/articles/что-такое-букмекерская-вилка.md
-- content/english/articles/что-такое-гандикап.md
-- content/english/articles/что-такое-ординар.md
-- content/english/articles/что-такое-ставки-на-спорт.md
-- content/english/articles/что-такое-суперэкспресс.md
-- content/english/articles/что-такое-фора.md
-- content/english/articles/что-такое-фрибет.md
-- content/english/stavki/ставки-на-хоккей.md
