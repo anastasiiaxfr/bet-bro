@@ -1,8 +1,7 @@
 ---
-title: Рейтинг букмекеров
+title: Рейтинги букмекеров
 author: xfr
-type: ratings
-date: 2020-02-05T09:56:41.000+00:00
+date: 2019-12-24T09:56:41+00:00
 url: "/2020/02/05/rejting-bukmekerov/"
 image: "/uploads/rating-bukmekerov-article.jpg"
 categories:
