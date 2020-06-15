@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<section class="page-wrapper pt-0">
+	<div class="container">
+		{{ partial "_breadcrumbs.html" . }}
+
+		<div class="row">
+
+			<div class="col-md-8">
+				<div class="post post-single">
+
+					<div class="section-policy">
+						{{ .Content }}
+					</div>
+					
+					<div class="post-comments">
+						{{ template "_internal/disqus.html" . }}
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				{{ partial "blog-sidebar.html" . }}
+			</div>
+		</div>
+	</div>
+</section>
+
+{{ end }}

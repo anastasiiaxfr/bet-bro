@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<section class="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 pb-20">
+         <h2>{{ i18n "form_title" }}</h2>
+      </div>
+      
+      <form method="POST" action="{{ .Site.Params.contact_form_action | safeURL }}">
+        <div class="col-md-6 col-sm-12">
+
+          <div class="block">
+            <div class="form-group">
+              <input name="user_name" type="text" class="form-control" placeholder="{{ i18n "contact_name" }}">
+            </div>
+            <div class="form-group">
+              <input name="user_email" type="text" class="form-control" placeholder="{{ i18n "contact_email" }}">
+            </div>
+            <div class="form-group">
+              <input name="user_subject" type="text" class="form-control" placeholder="{{ i18n "contact_subject" }}">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <div class="form-group-2">
+              <textarea name="user_message" class="form-control" rows="4" placeholder="{{ i18n "contact_msg" }}"></textarea>
+            </div>
+            <button class="btn btn-default" type="submit">{{ i18n "submit" }}</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="contact-box row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>{{ i18n "address_title" }}</h2>
+          <ul class="address-block">
+            <li><i class="icon-location-pin"></i><b>{{i18n "location"}}:</b> {{ .Site.Params.location }}</li>
+            <li><i class="icon-bubbles"></i><b>{{i18n "email"}}:</b> <a href="mailto: {{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
+            <li><i class="icon-envelope-letter"></i><b>{{i18n "email_partners"}}:</b> <a href="mailto:{{ .Site.Params.email_partners }}">{{ .Site.Params.email_partners }}</a></li>
+          </ul>
+          <nav class="soc">
+            {{ range .Site.Params.social }}
+           <a class="soc-icon" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a>
+            {{ end }}
+          </nav>
+        </div>
+      </div>
+      {{ if .Site.Params.gmap.enable }}
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <div class="google-map">
+            <div class="map" id="map_canvas" data-latitude="{{ .Site.Params.gmap.map_latitude }}" data-longitude="{{ .Site.Params.gmap.map_longitude }}" data-marker="{{ .Site.Params.gmap.map_marker | relURL }}" data-marker-name="{{ .Site.Title }}"></div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

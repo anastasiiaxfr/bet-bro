@@ -1,0 +1,150 @@
+{{ define "main" }}
+
+<section class="page-wrapper pt-0">
+	<div class="container">
+		{{ partial "_breadcrumbs.html" . }}
+
+		<div class="row">
+
+			<div class="col-md-8">
+				<div class="post post-single">
+
+					<div class="section-policy">
+						
+						{{ range  (where .Site.Pages "Type" "news") }}
+						<section class="post-demo">
+							<div class="post-demo-meta">
+								<span>{{ .PublishDate.Format "2006-01-02"  }} </span> /
+								<b>{{  .PublishDate.Format "15:04" }}</b>
+							</div> &nbsp;
+							<div class="post-demo-body">
+								<h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+							</div>
+
+						</section>
+						{{ end }}
+
+						{{ range  (where .Site.Pages "Type" "post") }}
+						<section class="post-demo">
+							<div class="post-demo-meta">
+								<span>{{ .PublishDate.Format "2006-01-02"  }} </span> /
+								<b>{{  .PublishDate.Format "15:04" }}</b>
+							</div>
+							<div class="post-demo-body">
+								<h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+							</div>
+
+						</section>
+						{{ end }}
+
+						{{ range  (where .Site.Pages "Type" "articles") }}
+						<section class="post-demo">
+							<div class="post-demo-meta">
+								<span>{{ .PublishDate.Format "2006-01-02"  }} </span> /
+								<b>{{  .PublishDate.Format "15:04" }}</b>
+							</div>
+							<div class="post-demo-body">
+								<h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+							</div>
+
+						</section>
+						{{ end }}
+
+						{{ range  (where .Site.Pages "Type" "prognozy") }}
+						<section class="post-demo">
+							<div class="post-demo-meta">
+								<span>{{ .PublishDate.Format "2006-01-02"  }} </span> /
+								<b>{{  .PublishDate.Format "15:04" }}</b>
+							</div>
+							<div class="post-demo-body">
+								<h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+							</div>
+
+						</section>
+						{{ end }}
+
+						{{ range  (where .Site.Pages "Type" "bonuses") }}
+						<section class="post-demo">
+							<div class="post-demo-meta">
+								<span>{{ .PublishDate.Format "2006-01-02"  }} </span> /
+								<b>{{  .PublishDate.Format "15:04" }}</b>
+							</div>
+							<div class="post-demo-body">
+								<h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+							</div>
+
+						</section>
+						{{ end }}
+
+						{{ range  (where .Site.Pages "Type" "stavki") }}
+						<section class="post-demo">
+							<div class="post-demo-meta">
+								<span>{{ .PublishDate.Format "2006-01-02"  }} </span> /
+								<b>{{  .PublishDate.Format "15:04" }}</b>
+							</div>
+							<div class="post-demo-body">
+								<h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+							</div>
+
+						</section>
+						{{ end }}
+
+						{{ range  (where .Site.Pages "Type" "ratings") }}
+						<section class="post-demo">
+							<div class="post-demo-meta">
+								<span>{{ .PublishDate.Format "2006-01-02"  }} </span> /
+								<b>{{  .PublishDate.Format "15:04" }}</b>
+							</div>
+							<div class="post-demo-body">
+								<h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+							</div>
+
+						</section>
+						{{ end }}
+
+
+						<!-- Widget Category -->
+						<div class="widget-category">
+							<h4 class="widget-title">Categories</h4>
+							{{- if isset .Site.Taxonomies "categories" }}
+							{{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+							<ul class="widget-category-list">
+								{{- range $name, $items := .Site.Taxonomies.categories }}
+								<li><a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+								{{- end }}
+							</ul>
+							{{- end }}
+							{{- end }}
+						</div> 
+						<!-- End category  -->
+
+						<!-- Widget tag -->
+						<div class="widget-tag">
+							<h4 class="widget-title">Tags</h4>
+							{{- if isset .Site.Taxonomies "tags" }}
+							{{- if not (eq (len .Site.Taxonomies.tags) 0) }}
+							<ul class="widget-tag-list">
+								{{- range $name, $items := .Site.Taxonomies.tags }}
+								<li><a href="{{ `tags/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
+								{{- end }}
+							</ul>
+							{{- end }}
+							{{- end }}
+						</div> <!-- End tag  -->
+
+					</div>
+					
+					<div class="post-comments">
+						{{ template "_internal/disqus.html" . }}
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				{{ partial "blog-sidebar.html" . }}
+			</div>
+		</div>
+	</div>
+</section>
+
+{{ end }}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Контакты on Главная</title>
+    <link>https://dreamy-poincare-eaf85b.netlify.app/en/contacts/</link>
+    <description>Recent content in Контакты on Главная</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dreamy-poincare-eaf85b.netlify.app/en/contacts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

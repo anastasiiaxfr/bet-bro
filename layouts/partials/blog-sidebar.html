@@ -1,0 +1,102 @@
+<aside class="sidebar">
+  <!-- Widget Latest Posts -->
+  <div class="widget widget-latest-post">
+    <h4 class="widget-title">ТОП ПРОГНОЗЫ</h4>
+    {{ range first 2 (where .Site.Pages "Type" "prognozy") }}
+    <div class="media">
+      <a class="pull-left" href="{{ .Permalink }}">
+        <img class="media-object" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+      </a>
+      <div class="media-body">
+         <small>{{ .PublishDate.Format "2006-01-02 | 15:04"  }} </small>
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <p>{{ .Summary | truncate 50 }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <!-- End Latest Posts -->
+
+  <!-- Widget Latest Posts -->
+  <div class="widget widget-latest-post">
+    <h4 class="widget-title">АКТУАЛЬНОЕ СТАВКИ</h4>
+    {{ range first 2 (where .Site.Pages "Type" "stavki") }}
+    <div class="media">
+      <a class="pull-left" href="{{ .Permalink }}">
+        <img class="media-object" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+      </a>
+      <div class="media-body">
+         <small>{{ .PublishDate.Format "2006-01-02 | 15:04"  }} </small>
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <p>{{ .Summary | truncate 50 }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <!-- End Latest Posts -->
+
+   <!-- Widget Latest Posts -->
+  <div class="widget widget-latest-post">
+    <h4 class="widget-title">НОВЫЕ ПУБЛИКАЦИИ</h4>
+    {{ range first 2 (where .Site.Pages "Type" "news") }}
+    <div class="media">
+      <a class="pull-left" href="{{ .Permalink }}">
+        <img class="media-object" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+      </a>
+      <div class="media-body">
+         <small>{{ .PublishDate.Format "2006-01-02 | 15:04"  }} </small>
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <p>{{ .Summary | truncate 50 }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <!-- End Latest Posts -->
+
+     <!-- Widget Latest Posts -->
+  <div class="widget widget-latest-post">
+    <h4 class="widget-title">ОБЗОРЫ БУКМЕКЕРОВ</h4>
+    {{ range first 3 (where .Site.Pages "Type" "ratings") }}
+    <div class="media">
+      <a class="pull-left" href="{{ .Permalink }}">
+        <img class="media-object" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+      </a>
+      <div class="media-body">
+        <small>{{ .PublishDate.Format "2006-01-02 | 15:04"  }} </small>
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <p>{{ .Summary | truncate 50 }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <!-- End Latest Posts -->
+
+  <!-- Widget Category -->
+  <!-- <div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    {{- if isset .Site.Taxonomies "categories" }}
+    {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+    <ul class="widget-category-list">
+      {{- range $name, $items := .Site.Taxonomies.categories }}
+      <li><a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+    {{- end }}
+  </div> --> 
+  <!-- End category  -->
+
+  <!-- Widget tag -->
+  <!-- <div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    {{- if isset .Site.Taxonomies "tags" }}
+    {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
+    <ul class="widget-tag-list">
+      {{- range $name, $items := .Site.Taxonomies.tags }}
+      <li><a href="{{ `tags/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+    {{- end }}
+  </div> --> <!-- End tag  -->
+</aside>

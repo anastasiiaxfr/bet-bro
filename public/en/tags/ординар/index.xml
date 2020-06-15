@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ординар on Главная</title>
+    <link>https://dreamy-poincare-eaf85b.netlify.app/en/tags/%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%80/</link>
+    <description>Recent content in ординар on Главная</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Dec 2019 13:51:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dreamy-poincare-eaf85b.netlify.app/en/tags/%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ЧТО ТАКОЕ ОРДИНАР</title>
+      <link>https://dreamy-poincare-eaf85b.netlify.app/en/articles/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%80/</link>
+      <pubDate>Wed, 25 Dec 2019 13:51:00 +0000</pubDate>
+      
+      <guid>https://dreamy-poincare-eaf85b.netlify.app/en/articles/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%80/</guid>
+      <description>Ординаром в букмекерских конторах называется ставка одно событие – исход, фору, тотал и т.д. Также в некоторых букмекерских конторах употребляется термин «одинар» или «одиночная ставка». Чтобы выиграть такую ставку нужно верно спрогнозировать всего один исход с определенным коэффициентом, который при выигрыше умножится на сумму ставки.</description>
+    </item>
+    
+  </channel>
+</rss>

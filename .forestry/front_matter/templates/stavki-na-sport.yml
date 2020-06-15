@@ -1,0 +1,51 @@
+---
+label: Post
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
+  default: "/uploads/news.png"
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 300
+  label: description
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- name: categories
+  type: tag_list
+  default: []
+  label: categories
+pages:
+- content/english/articles/что-такое-букмекерская-вилка.md
+- content/english/articles/что-такое-гандикап.md
+- content/english/articles/что-такое-ординар.md
+- content/english/articles/что-такое-ставки-на-спорт.md
+- content/english/articles/что-такое-суперэкспресс.md
+- content/english/articles/что-такое-фора.md
+- content/english/articles/что-такое-фрибет.md
+- content/english/stavki/ставки-на-хоккей.md

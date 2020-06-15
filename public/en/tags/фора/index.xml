@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>фора on Главная</title>
+    <link>https://dreamy-poincare-eaf85b.netlify.app/en/tags/%D1%84%D0%BE%D1%80%D0%B0/</link>
+    <description>Recent content in фора on Главная</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Dec 2019 13:51:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dreamy-poincare-eaf85b.netlify.app/en/tags/%D1%84%D0%BE%D1%80%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ЧТО ТАКОЕ ФОРА</title>
+      <link>https://dreamy-poincare-eaf85b.netlify.app/en/articles/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%84%D0%BE%D1%80%D0%B0/</link>
+      <pubDate>Wed, 25 Dec 2019 13:51:00 +0000</pubDate>
+      
+      <guid>https://dreamy-poincare-eaf85b.netlify.app/en/articles/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%84%D0%BE%D1%80%D0%B0/</guid>
+      <description>Форой в ставках на спорт называется некое численное значение, прибавляемое к итоговому счету или отнимаемое от него для той команды, на фору которой делает ставку беттор. Понятие форы было введено для того, чтобы найти больше вариантов для ставок в матчах с очевидным фаворитом, где ставки на исход матча не являются интересными для бетторов.</description>
+    </item>
+    
+  </channel>
+</rss>

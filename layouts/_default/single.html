@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<section class="page-wrapper pt-0">
+	<div class="container">
+		{{ partial "_breadcrumbs.html" . }}
+
+		<div class="row">
+
+			<div class="col-md-8">
+				<div class="post post-single">
+					<hgroup class="post-header">
+						<h2 class="post-title">{{ .Title }}</h2>
+						<div class="post-meta">
+							{{ .PublishDate.Format "January 2, 2006" }}
+						</div>
+					</hgroup>
+					<div class="post-thumb">
+						<nav class="post-cat-wrap">
+							{{ range $index, $elements:= .Params.Tags }}
+							{{ if ne $index 0 }} {{ end }}<a class="post-cat" href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . | humanize }}</a>
+							{{ end }}
+						</nav>
+						<img class="img-responsive" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+					</div>
+					{{ if .Params.image_title }}
+					<div class="post-thumb-title">
+						{{ .Params.image_title }}
+					</div>
+					{{ end }}
+
+					<div class="post-content post-excerpt">
+						{{ .Content }}
+					</div>
+					
+					<div class="post-comments">
+						{{ template "_internal/disqus.html" . }}
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				{{ partial "blog-sidebar.html" . }}
+			</div>
+		</div>
+	</div>
+</section>
+
+{{ end }}

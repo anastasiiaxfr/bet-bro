@@ -1,0 +1,158 @@
+// Fonts 
+// @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+// @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600);
+// @import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Thin'), local('Proxima-Nova-Thin'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Thin/ProximaNovaT-Thin.woff2') format('woff2'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Thin/ProximaNovaT-Thin.woff') format('woff'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Thin/ProximaNovaT-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Light'), local('Proxima-Nova-Light'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Light/ProximaNova-Light.woff2') format('woff2'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Light/ProximaNova-Light.woff') format('woff'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Light/ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('Proxima-Nova-Regular'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Regular/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Regular/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Regular/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Semibold'), local('Proxima-Nova-Semibold'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Semibold/ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Semibold/ProximaNova-Semibold.woff') format('woff'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Semibold/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Bold'), local('Proxima-Nova-Bold'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Bold/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Bold/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Bold/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Black'), local('Proxima-Nova-Black'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Black/ProximaNova-Black.woff2') format('woff2'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Black/ProximaNova-Black.woff') format('woff'),
+        url('../fonts/Proxima_Nova/Proxima_Nova_Black/ProximaNova-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+
+
+
+body {
+  line-height: 1.5;
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 40px;
+  font-size: calc(28px + 1vmax);
+  line-height: 1;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  color: #7B7B7B;
+  font-size: 15px;
+  font-family: $primary-font;
+}
+
+a, p {
+  color: inherit;
+}
+a {
+  &:hover, &:focus, &:active {
+    color: $light;
+  }
+}
+p {
+  margin: 0;
+}
+
+.heading {
+  &-1 {
+   text-transform: uppercase;
+   font-weight: 900;
+   font-size: calc(28px + 1vmax);
+   line-height: 1;
+   color: $red;
+   margin: 0 auto;
+ }
+ &-2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+}
+
+
+.text {
+  &-1 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: $txtColor;
+  }
+}

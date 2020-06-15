@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<!-- banner -->
+{{ if $data.homepage.banner.enable }}
+{{ with $data.homepage.banner }}
+<section class="slider d-flex" style="background-image: url('{{ .bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <img src="{{ .banner_img | absURL  }}" alt="{{ .Site.Title }}" width="{{ .banner_img_width }}">
+          <h1 class="slider-title">{{ .title | markdownify }}</h1>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" target="_blank" class="btn btn-main animated fadeInUp">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /banner -->
+
+
+
+{{ end }}

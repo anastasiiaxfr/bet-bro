@@ -1,0 +1,53 @@
+
+.bg-shadow {
+  background-color: $light;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, .08);
+  padding: 20px;
+}
+
+
+.bg-1 {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+.bg-2 {
+	background-size: contain, cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	background-attachment: initial;
+}
+.bg-3 {
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.bg-4 {
+	background: $boxGrad;
+}
+
+.bg-gray {
+  background: #f9f9f9;
+}
+
+.bg-primary {
+  background: $primary-color;
+}
+
+.bg-primary-dark {
+  background: darken($primary-color, 10%);
+}
+
+.bg-primary-darker {
+  background: darken($primary-color, 20%);
+
+}
+
+.bg-dark {
+  background: #202122;
+}

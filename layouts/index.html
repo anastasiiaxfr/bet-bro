@@ -1,0 +1,273 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<!-- banner -->
+{{ if $data.homepage.banner.enable }}
+{{ with $data.homepage.banner }}
+<section class="slider d-flex" style="background-image: url('{{ .bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <img src="{{ .banner_img | absURL  }}" alt="{{ .Site.Title }}" width="{{ .banner_img_width }}">
+          <h1 class="slider-title">{{ .title | markdownify }}</h1>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" target="_blank" class="btn btn-main animated fadeInUp">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /banner -->
+
+<!-- section -->
+<article class="pg-section py-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4  my-50">
+       <h2 class="heading-2"> {{ i18n "home-news" }}</h2>
+       {{ range first 6 (where .Site.Pages "Type" "news") }}
+       <section class="post-demo">
+        <div class="post-demo-meta">
+          <span>{{ .PublishDate.Format "2006-01-02"  }} </span><br>
+          <b>{{  .PublishDate.Format "15:04" }}</b>
+        </div>
+        <div class="post-demo-body">
+          <h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        </div>
+
+      </section>
+      {{ end }}
+      <a href="{{ `/news/` | absURL }}" class="btn-link"> {{ i18n "go_to_news" }}</a>
+    </div>
+    <div class="col-md-4 my-50">
+     <h2 class="heading-2"> {{ i18n "home-prognozy" }}</h2>
+     {{ range first 6 (where .Site.Pages "Type" "prognozy") }}
+     <section class="post-demo">
+      <div class="post-demo-meta">
+        <span>{{ .PublishDate.Format "2006-01-02"  }} </span><br>
+        <b>{{  .PublishDate.Format "15:04" }}</b>
+      </div>
+      <div class="post-demo-body">
+        <h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+      </div>
+
+    </section>
+    {{ end }}
+    <a href="{{ `/prognozy/` | absURL }}" class="btn-link"> {{ i18n "go_to_prognozy" }}</a>
+  </div>
+  <div class="col-md-4 my-50">
+    <h2 class="heading-2">{{ i18n "home-ratings" }}</h2>
+
+    {{ range first 6 (where .Site.Pages "Type" "ratings") }}
+    <section class="post-demo">
+      <div class="post-demo-meta">
+        <span>{{ .PublishDate.Format "2006-01-02"  }} </span><br>
+        <b>{{  .PublishDate.Format "15:04" }}</b>
+      </div>
+      <div class="post-demo-body">
+        <h4 class="post-demo-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+      </div>
+
+    </section>
+    {{ end }}
+    <a href="{{ `/ratings/` | absURL }}" class="btn-link"> {{ i18n "go_to_ratings" }}</a>
+  </div>
+</div>
+</div>
+</article>
+<!-- /section -->
+
+<!-- section -->
+<section class="pg-section bg-4">
+  <div class="container">
+    <div class="box1">
+      <div class="box1-header">
+        <span>
+          3 шага
+        </span>
+        <h3 class="box1-title">
+          КАК НАЧАТЬ ДЕЛАТЬ СТАВКИ?
+        </h3>
+        <a href="{{ `/ratings/` | absURL }}" class="btn-bg-blue">
+          УЗНАТЬ БОЛЬШЕ
+        </a>
+      </div>
+      <div class="box1-content">
+        <div class="box1-col">
+          <b>01</b>
+          <a href="/2020/02/07/kakuyu-bukmekerskuyu-kontoru-vybrat-pyat-osnovnyh-kriteriev/ }}">
+            <span>
+              как выбрать букмекерскую контору
+            </span>
+          </a>
+        </div>
+        <div class="box1-col">
+          <b>02</b>
+
+          <a href="/2019/12/25/kak-zaregistrirovatsya-v-bukmekerskoj-kontore/">
+            <span>
+              зарегистрироваться в букмекерской которе
+            </span>
+          </a>
+
+        </div>
+        <div class="box1-col">
+          <b>03</b>
+          <a href="/2019/12/25/bukmekerskie-sovety-novichkam/">
+            <span>
+              букмекерские советы новичкам
+            </span>
+          </a>
+        </div>
+      </div>
+      <a href="{{ `/ratings/` | absURL }}" class="btn-bg-blue btn-sm">
+        УЗНАТЬ БОЛЬШЕ
+      </a>
+    </div>
+  </div>
+</section>
+<!-- /section -->
+
+
+<!-- section -->
+<section class="pg-section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-6">
+        <h2 class="heading-1">
+          Бонусы & ставки
+        </h2>
+        <p class="text-1 row-1">
+          О них говорят везде и всегда, о них упоминают в первую очередь на любом баннере и видеоролике, называя громко большую цифру денег или процент, который игрок получит при регистрации...
+        </p>
+
+        <div>
+          <a href="#" class="btn-link">УЗНАТЬ ПРОГНОЗЫ</a>
+          <a href="#" class="btn-link">ПОСМОТРЕТЬ РЕЙТИНГИ</a>
+        </div>
+
+      </div>
+      <div class="col-sm-6 row-2">
+
+        <picture class="img-1">
+          <source srcset="{{ `images/bg-home-3.webp` | absURL }}" type="image/webp"  height="400">
+           <img  src="{{ `images/bg-home-3.png` | absURL }}" alt="{{ .Site.Title }}"  height="400">
+         </picture>
+
+
+       </div>
+
+     </div>
+   </div>
+ </section>
+ <!-- /section -->
+
+ <!-- section -->
+ <section class="pg-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        {{ range first 1 (where .Site.Pages "Type" "stavki") }}
+        <figure class="card1">
+          <div class="card1-content">
+            <span class="card1-meta">
+              <small class="icon-clock"></small>&nbsp;
+              {{ .PublishDate.Format "2006-01-02"  }}
+            </span>
+            <h3 class="card1-title">
+             <a href="{{ .Permalink }}">
+              {{ .Title }}
+            </a>
+          </h3>
+          <a href="{{ .Permalink }}" class="btn-link">
+            БОЛЬШЕ СТАВОК
+          </a>
+        </div>
+        <div class="card1-pic">
+
+          <picture>
+            <source srcset="{{ `images/bg-stavki.png` | absURL }}" type="image/webp" height="200">
+              <img src="{{ `images/bg-stavki.png` | absURL }}" alt="ALT" height="200">
+            </picture>
+
+          </div>
+        </figure>
+        {{ end }}
+      </div>
+      <div class="col-sm-6">
+        {{ range first 1 (where .Site.Pages "Type" "bonuses") }}
+        <figure class="card1">
+          <div class="card1-content">
+            <span class="card1-meta">
+              <small class="icon-clock"></small>
+              {{ .PublishDate.Format "2006-01-02"  }}
+            </span>
+            <h3 class="card1-title">
+             <a href="{{ .Permalink }}">
+              {{ .Title }}
+            </a>
+          </h3>
+          <a href="{{ .Permalink }}" class="btn-link">
+           ВСЕ БОНУСЫ
+         </a>
+       </div>
+       <div class="card1-pic">
+
+        <picture>
+          <source srcset="{{ `images/bg-bonuses.png` | absURL }}" type="image/webp" height="200">
+            <img src="{{ `images/bg-bonuses.png` | absURL }}" alt="ALT" height="200">
+          </picture>
+
+        </div>
+      </figure>
+      {{ end }}
+    </div>
+  </div>
+  <div class="row">
+    <nav class="tags-list">
+      <a href="tags/">
+        <small>#</small>
+        БАСКЕТБОЛ
+      </a>
+      <a href="tags/">
+        <small>#</small>
+        ВОЛЕЙБОЛ
+      </a>
+      <a href="tags/">
+        <small>#</small>
+        ЕДИНОБОРСТВА
+      </a>
+      <a href="tags/">
+        <small>#</small>
+        КИБЕРСПОРТ
+      </a>
+      <a href="tags/">
+        <small>#</small>
+        ТЕННИС
+      </a>
+      <a href="tags/">
+        <small>#</small>
+        ФУТБОЛ
+      </a>
+      <a href="tags/">
+        <small>#</small>
+        ХОККЕЙ
+      </a>
+    </nav>
+
+  </div>
+</div>
+</section>
+<!-- /section -->
+
+{{ end }}

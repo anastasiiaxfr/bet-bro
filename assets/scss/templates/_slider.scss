@@ -1,0 +1,40 @@
+.slider {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  min-height: 290px;
+  max-height: 320px;
+  height: 100%;
+  position: relative;
+  @include flex(flex, center, center, wrap);
+  @media only screen and (max-width: 998px){
+    background-image: $grad2 !important;
+  }
+  .container, .row {
+    &::before, &::after {
+      display: none;
+    }
+  }
+
+  .block {
+    color: #E3E3E4;
+    text-align: center;
+
+    h1 {
+     color: $red;
+     font-weight: 900;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     line-height: 1;
+     margin: 0 auto;
+   }
+
+   p {
+    margin-bottom: 30px;
+    color: #b9b9b9;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+  }
+}
+}

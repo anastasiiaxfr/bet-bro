@@ -1,0 +1,62 @@
+/*=================================================================
+  Latest Posts
+==================================================================*/
+
+.blog {
+  background: #F6F6F6;
+}
+
+.post {
+  background: $light;
+
+
+  &-media {
+    &.post-thumb {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &.post-media-audio {
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+.post-pagination {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  >li {
+    margin: 0 2px;
+    display: inline-block;
+    font-size: 14px;
+
+    >a {
+      color: $black;
+      padding: 4px 12px;
+      border: 1px solid $greyLight3;
+      @include transition (all, 0.3s, ease);
+
+      &:hover {
+        border: 1px solid $primary-color;
+        background-color: transparent;
+        color: $black;
+      }
+    }
+
+    &.active>a {
+      border: 1px solid $primary-color !important;
+      color: $black;
+    }
+  }
+
+  >li:first-child>a,
+  >li:last-child>a {
+    border-radius: 0;
+  }
+}
