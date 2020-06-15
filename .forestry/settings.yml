@@ -13,14 +13,18 @@ sections:
   - stavki-na-sport
 - type: directory
   path: content/en/prognozy-na-hockey
-  label: ПРОГНОЗЫ НА ХОККЕЙ
+  label: Прогнозы НА ХОККЕЙ
   create: all
   match: "**/*"
+  templates:
+  - stavki-na-sport
 - type: directory
   path: content/en/prognozy-na-football
-  label: ПРОГНОЗЫ НА ФУТБОЛ
+  label: Прогнозы НА ФУТБОЛ
   create: all
   match: "**/*"
+  templates:
+  - stavki-na-sport
 - type: directory
   path: content/en/prognozy-na-basketball
   label: ПРОГНОЗЫ НА БАСКЕТБОЛ
