@@ -685,6 +685,25 @@ li {
     @media only screen and(max-width: 568px){
       padding: 25px;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+      text-transform: uppercase;
+      text-align: left;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:not(:first-child){
+        margin-top: 40px;
+      }
+    } 
+
+    h1 + p {
+      padding-left: 0;
+    }
+
     .widget-title {
       margin-top: 30px;
       margin-bottom: 15px;
@@ -760,16 +779,7 @@ li {
       margin: auto;
     }
   }
-  h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 24px;
-    &:not(:first-child){
-      margin-top: 40px;
-    }
-  } 
+
 }
 }
 
