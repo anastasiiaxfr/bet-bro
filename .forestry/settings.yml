@@ -6,9 +6,11 @@ webhook_url:
 sections:
 - type: directory
   path: content/en/prognozy
-  label: ПРОГНОЗЫ
+  label: Прогнозы
   create: all
   match: "**/*"
+  templates:
+  - stavki-na-sport
 - type: directory
   path: content/en/prognozy-na-hockey
   label: ПРОГНОЗЫ НА ХОККЕЙ
@@ -28,35 +30,35 @@ sections:
   - stavki-na-sport
 - type: directory
   path: content/en/ratings
-  label: РЕЙТИНГ БУКМЕКЕРОВ
+  label: Рейтинги
   create: all
   match: "**/*"
   templates:
   - stavki-na-sport
 - type: directory
   path: content/en/articles
-  label: СТАТЬИ
+  label: Статьи
   create: all
   match: "**/*"
   templates:
   - stavki-na-sport
 - type: directory
   path: content/en/news
-  label: НОВОСТИ
+  label: Новости
   create: all
   match: "**/*"
   templates:
   - stavki-na-sport
 - type: directory
   path: content/en/bonuses
-  label: БОНУСЫ БУКМЕКЕРОВ
+  label: Бонусы
   create: all
   match: "**/*"
   templates:
   - stavki-na-sport
 - type: directory
   path: content/en/stavki
-  label: СТАВКИ НА СПОРТ
+  label: Ставки
   create: all
   match: "**/*"
   templates:
