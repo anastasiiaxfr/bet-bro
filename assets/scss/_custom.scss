@@ -826,3 +826,30 @@ li {
   }
 
 }
+
+.media {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        small {
+            font-size: 70%;
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.widget-category {
+    margin-top: 30px;
+}
+
+.post .section-policy a:hover {
+    color: #fff;
+}

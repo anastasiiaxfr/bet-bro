@@ -6,11 +6,7 @@
     <description>Recent content in ratings on Главная</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2020 09:13:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://dreamy-poincare-eaf85b.netlify.app/categories/ratings/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 16 Mar 2020 09:13:04 +0000</lastBuildDate><atom:link href="https://dreamy-poincare-eaf85b.netlify.app/categories/ratings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Букмекерская контора Олимп</title>
       <link>https://dreamy-poincare-eaf85b.netlify.app/2020/03/16/bukmekerskaya-kontora-olimp/</link>
@@ -117,15 +113,6 @@
       
       <guid>https://dreamy-poincare-eaf85b.netlify.app/2020/02/19/obzor-bukmekerskoj-kontory-pin-up/</guid>
       <description>Букмекерская контора Pin-Up работает на украинском рынке онлайн ставок уже больше десяти лет, но только в последнее время стала набирать приличную базу клиентов. Букмекер использует лицензию Кюрасао, а своим юридическим адресом указывает Кипр, ориентируясь в своей работе на клиентов из стран постсоветского пространства.</description>
-    </item>
-    
-    <item>
-      <title>Рейтинг букмекеров</title>
-      <link>https://dreamy-poincare-eaf85b.netlify.app/2020/02/05/rejting-bukmekerov/</link>
-      <pubDate>Wed, 05 Feb 2020 09:56:41 +0000</pubDate>
-      
-      <guid>https://dreamy-poincare-eaf85b.netlify.app/2020/02/05/rejting-bukmekerov/</guid>
-      <description>На рынке онлайн ставок на спорт представлено немало букмекерских контор с различными сервисами, программными платформами, линией, коэффициентами и бонусными предложениями. Чтобы не утонуть в море информации и предложений на отечественном рынке ставок на спорт, мы предлагаем беттору справедливый рейтинг букмекеров, с независимой оценкой их основных сервисов, репутации и привлекательности для ставок.</description>
     </item>
     
     <item>
@@ -277,6 +264,15 @@
       <guid>https://dreamy-poincare-eaf85b.netlify.app/2019/12/25/mobilnye-bukmekery/</guid>
       <description>Мобильные букмекеры — букмекеры, услугами которых возможно пользоваться с мобильных устройств вроде смартфонов или планшетов.
 Современная и уважающая себя букмекерская компания не будет рассчитывать только на использование игроками версии сайта для компьютера.</description>
+    </item>
+    
+    <item>
+      <title>Рейтинги букмекеров</title>
+      <link>https://dreamy-poincare-eaf85b.netlify.app/2020/02/05/rejting-bukmekerov/</link>
+      <pubDate>Tue, 24 Dec 2019 09:56:41 +0000</pubDate>
+      
+      <guid>https://dreamy-poincare-eaf85b.netlify.app/2020/02/05/rejting-bukmekerov/</guid>
+      <description>На рынке онлайн ставок на спорт представлено немало букмекерских контор с различными сервисами, программными платформами, линией, коэффициентами и бонусными предложениями. Чтобы не утонуть в море информации и предложений на отечественном рынке ставок на спорт, мы предлагаем беттору справедливый рейтинг букмекеров, с независимой оценкой их основных сервисов, репутации и привлекательности для ставок.</description>
     </item>
     
   </channel>

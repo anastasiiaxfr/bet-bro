@@ -1,7 +1,8 @@
 ################################# Default configuration ###################
 #baseURL = "https://examplesite.com"
-baseURL = "https://dreamy-poincare-eaf85b.netlify.app/"
+baseURL = "/"
 title = "Главная"
+
 meta_title = "Прогнозы на спорт, ставки и обзоры букмекерских контор"
 # post pagination
 paginate = "8"

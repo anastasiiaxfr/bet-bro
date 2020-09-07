@@ -11,7 +11,7 @@
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
-  <link rel="stylesheet" href="{{ .link | absURL }}">
+  <link rel="stylesheet" href="{{ .link | relURL }}">
   {{ end }}
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
@@ -19,13 +19,13 @@
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
   {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ `images/favicon/apple-touch-icon.png` | absURL }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ `images/favicon/favicon-32x32.png` | absURL }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ `images/favicon/favicon-16x16.png` | absURL }}">
-  <link rel="manifest" href="{{ `images/favicon/site.webmanifest` | absURL }}">
-  <link rel="mask-icon" href="{{ `images/favicon/safari-pinned-tab.svg` | absURL }}" color="#5bbad5">
+  <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }}" type="image/x-icon">
+  <link rel="icon" href="{{ `images/favicon.png` | relURL }}" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ `images/favicon/apple-touch-icon.png` | relURL }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ `images/favicon/favicon-32x32.png` | relURL }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ `images/favicon/favicon-16x16.png` | relURL }}">
+  <link rel="manifest" href="{{ `images/favicon/site.webmanifest` | relURL }}">
+  <link rel="mask-icon" href="{{ `images/favicon/safari-pinned-tab.svg` | relURL }}" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
 </head>

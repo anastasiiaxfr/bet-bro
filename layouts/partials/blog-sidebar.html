@@ -9,8 +9,8 @@
       </a>
       <div class="media-body">
          <small>{{ .PublishDate.Format "2006-01-02 | 15:04"  }} </small>
-        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-        <p>{{ .Summary | truncate 50 }}</p>
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title | truncate 50}}</a></h4>
+        <p>{{ .Summary | truncate 35 }}</p>
       </div>
     </div>
     {{ end }}
@@ -27,8 +27,8 @@
       </a>
       <div class="media-body">
          <small>{{ .PublishDate.Format "2006-01-02 | 15:04"  }} </small>
-        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-        <p>{{ .Summary | truncate 50 }}</p>
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title | truncate 50}}</a></h4>
+        <p>{{ .Summary | truncate 35 }}</p>
       </div>
     </div>
     {{ end }}
@@ -45,8 +45,8 @@
       </a>
       <div class="media-body">
          <small>{{ .PublishDate.Format "2006-01-02 | 15:04"  }} </small>
-        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-        <p>{{ .Summary | truncate 50 }}</p>
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title | truncate 50}}</a></h4>
+        <p>{{ .Summary | truncate 35 }}</p>
       </div>
     </div>
     {{ end }}
@@ -63,8 +63,8 @@
       </a>
       <div class="media-body">
         <small>{{ .PublishDate.Format "2006-01-02 | 15:04"  }} </small>
-        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-        <p>{{ .Summary | truncate 50 }}</p>
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Title | truncate 50}}</a></h4>
+        <p>{{ .Summary | truncate 35 }}</p>
       </div>
     </div>
     {{ end }}

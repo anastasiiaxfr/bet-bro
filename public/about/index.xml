@@ -5,10 +5,6 @@
     <link>https://dreamy-poincare-eaf85b.netlify.app/about/</link>
     <description>Recent content in About Our Company on Главная</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://dreamy-poincare-eaf85b.netlify.app/about/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://dreamy-poincare-eaf85b.netlify.app/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
